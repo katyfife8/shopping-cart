@@ -1,0 +1,198 @@
+*:focus {
+  outline: none !important;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+#mobile {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #bde0fe;
+  margin: 0;
+  padding: 5px 30px 5px 30px;
+}
+
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header ion-icon {
+  font-size: 25px;
+}
+
+.shopping-cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  margin: 5px 0 0 5px;
+  padding: 10px 10px 20px 10px;
+}
+
+.shopping-cart a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* INDEX PAGE */
+
+.row-1,
+.row-2 {
+  display: flex;
+  width: 80%;
+  margin: 25px 0 0;
+}
+
+.flavour {
+  margin: 0px 15px 0px 15px;
+}
+
+h2 {
+  margin: 10px 0 0 5px;
+}
+
+p {
+  margin: 5px 0 0 5px;
+}
+
+button {
+  background-color: #bde0fe;
+  margin: 10px 0px 0 5px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 10%;
+}
+
+button:hover {
+  background-color: #a2d2ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* CART PAGE */
+
+.title {
+  margin: 25px 0 0 15px;
+}
+
+.products-container {
+  display: flex;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  align-items: flex-start;
+  margin: 30px 0 0 10px;
+}
+
+.product img {
+  width: 130px;
+  margin: 0 15px 0 15px;
+}
+
+.item-flavour {
+  font-size: 20px;
+}
+
+.price {
+  font-size: 16px;
+  margin: 20px 0 0 20px;
+}
+
+.quantity {
+  margin: 0 0 0 20px;
+  font-size: 16px;
+}
+
+.product ion-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.decrease,
+.increase {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+}
+
+.cartTotalContainer {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px 0 0 20px;
+  padding: 10px 0;
+}
+
+.cartTotalTitle {
+  width: 50%;
+}
+.cartTotal {
+  width: 10%;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 600px) {
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .cart {
+    margin: 8px 0 3px 8px;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin: 10px 0 0 15px;
+  }
+
+  .row-1,
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .flavour {
+    width: 100%;
+    display: flex;
+    margin: 0 0 20px 20px;
+  }
+
+  .details-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flavour img {
+    width: 45%;
+  }
+
+  p {
+    margin: 10px 0 0 17px;
+  }
+  button {
+    margin: 10px 0 0 15px;
+  }
+}
